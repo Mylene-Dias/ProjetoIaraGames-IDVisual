@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos - Iara Games</title>
+  <link rel="stylesheet" href="../CSS/Jogos.css">
+</head>
+<body>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div class="main-content">
+    <div class="container">
+
+      <!-- BLOCO AMARELO -->
+      <div class="quadrado amarelo">
+        <a href="../PAGES/Page-Principal.html" class="logo">
+          <img src="../IMAGES/LOGO.png" alt="Iara Games">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../templates/cadastro.html" target="_blank">Cadastre-se</a></li>
+            <li><a href="../PAGES/SobreNós.html">Sobre Nós</a></li>
+          </ul>
+        </nav>
+        <img class="banner" id="bannerTroca" src="../IMAGES/GAMES/BANNER.png" alt="Banner">
+      </div>
+
+      <!-- BLOCO BRANCO -->
+      <div class="quadrado branco">
+        <h2>JOGOS EM DESTAQUE</h2>
+        <div class="conteudo destaque">
+          <div class="linha-separadora"></div>
+          <nav class="games">
+            <div class="game-item">
+              <a href="../PAGES/EnigmaDoMedo.html" target="_blank">
+                <img src="../IMAGES/GAMES/EnigmaDoMedo.png" alt="Enigma do Medo">
+              </a>
+              <p>Enigma do Medo</p>
+            </div>
+            <div class="game-item">
+              <a href="../PAGES/VyankasMemories.html" target="_blank">
+                <img src="../IMAGES/GAMES/VyankasMemories.png" alt="Vyankas Memories">
+              </a>
+              <p>Vyankas Memories</p>
+            </div>
+            <div class="game-item">
+              <a href="../PAGES/MarkOfTheDeep.html" target="_blank">
+                <img src="../IMAGES/GAMES/MarkOfTheDeep.png" alt="Mark of The Deep">
+              </a>
+              <p>Mark of The Deep</p>
+            </div>
+            <div class="game-item">
+              <a href="../PAGES/TupiTheLegendOfArariboia.html" target="_blank">
+                <img src="../IMAGES/GAMES/TupiTheLegendOfArariboia.png" alt="Tupi: The Legend of Arariboia">
+              </a>
+              <p>Tupi: The Legend of Arariboia</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SCRIPT BANNER ROTATIVO -->
+  <script>
+    const banners = [
+      "../IMAGES/GAMES/BANNER.png",
+      "../IMAGES/GAMES/BANNER2.png",
+    ];
+
+    let index = 0;
+    const banner = document.getElementById("bannerTroca");
+
+    setInterval(() => {
+      banner.classList.add("fade-out");
+
+      setTimeout(() => {
+        index = (index + 1) % banners.length;
+        banner.src = banners[index];
+        banner.classList.remove("fade-out");
+      }, 1000);
+    }, 5000);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+  background-color: #004470;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url(../IMAGES/BACKGROUND/BACKGROUND.png);
+  background-size: 1920px 950px;
+}
+
+
+.form-container {
+  background-color: white;
+  color: #004470;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+.logo {
+  margin-bottom: 20px;
+}
+
+
+.logo img {
+  max-width: 150px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #0f6233; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0f6233;
+}
+
+
+.mensagens {
+  color: rgb(255, 136, 0);
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+
+
+
+body div {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

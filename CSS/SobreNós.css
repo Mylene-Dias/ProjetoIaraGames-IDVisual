@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    background: url(../IMAGES/BACKGROUND/BACKGROUND.png);
+    background-size: 1920px 950px;
+}
+ 
+
+.main-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    height: 800px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.411);
+}
+ 
+
+.quadrado {
+    flex: 1;
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+ 
+
+
+.amarelo {
+    background-color: #ffe066;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+  
+
+.amarelo nav ul {
+    position: absolute;
+    top: 20px;             
+    left: 20px;            
+    display: flex;
+    list-style: none;
+    gap: 40px;             
+    font-size: 30px;
+    margin: 0;
+    z-index: 2;
+}
+
+   
+  
+.amarelo nav a {
+    text-decoration: none;
+    font-weight: bold;         
+    font-style: italic;        
+    color: #ffffff;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.amarelo nav ul {
+    position: absolute;    
+    top: 20px;             
+    left: 100px;
+    transform: translateX(-50%); 
+    display: flex;
+    list-style: none;
+    gap: 140px;
+    font-size: 30px;
+    margin: 0; 
+    z-index: 2; 
+}
+
+
+.amarelo nav a:hover {
+    color: #ffffff;
+}
+ 
+
+.quadrado.amarelo img {
+    
+    height: 433px;
+    margin-top: -72px;
+    object-fit: cover;
+    transform: none; 
+    padding: -80px;
+}
+
+.quadrado.amarelo {
+    position: relative;
+    background-color: #ffe066;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}  
+
+.branco {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  justify-content: center;
+}
+
+
+
+.branco p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #004470;
+  font-size: 120%;
+  text-align: center;
+  margin-top: -20px;
+  white-space: normal;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 10px 90px 10px;
+  margin-top: -2px;
+}
+
+h2 {
+    margin-top: -20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #004470;
+}
+

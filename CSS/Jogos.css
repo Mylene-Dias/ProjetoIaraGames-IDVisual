@@ -1,0 +1,217 @@
+/* ----------------------------- */
+/* GERAL */
+/* ----------------------------- */
+body {
+  margin: 0;
+  background: url(../IMAGES/BACKGROUND/BACKGROUND.png);
+  background-size: 1920px 950px;
+}
+
+
+/* ----------------------------- */
+/* ESTRUTURA CONTAINER */
+/* ----------------------------- */
+.main-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1500px;
+  height: 800px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.486);
+}
+
+.quadrado {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ----------------------------- */
+/* BLOCO AMARELO */
+/* ----------------------------- */
+.amarelo {
+  background-color: #ffe066;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.amarelo .logo {
+  position: absolute;
+  top: -22px;
+  left: 73px;
+  width: 355px;
+  height: auto;
+}
+
+.amarelo nav ul {
+  display: flex;
+  list-style: none;
+  gap: 140px;
+  font-size: 30px;
+  margin-bottom: -30px;
+  transform: translateY(-56px);
+}
+
+.amarelo nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  color: #004470;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.amarelo nav a:hover {
+  color: #ffffff;
+}
+
+.amarelo img {
+  max-width: 40%;
+  max-height: 70%;
+  padding: 2px;
+  transform: translateY(40px);
+}
+
+.amarelo .banner {
+  max-width: 90%;
+  max-height: 90%;
+  margin-top: -40px;
+}
+
+.banner {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+
+/* ----------------------------- */
+/* BLOCO BRANCO */
+/* ----------------------------- */
+.branco {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.branco h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0f6233;
+  font-size: 27px;
+  text-align: center;
+  position: relative;
+  font-weight: 800;
+  transform: translateY(-20px);
+}
+
+.linha-separadora {
+  width: 100%;
+  max-width: 1360px;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 auto 80px;
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.game-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+  transform: scale(1.4);
+  margin: 0 65px;
+}
+
+.game-item img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.game-item img:hover {
+  transform: scale(1.05);
+}
+
+.game-item p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #004470;
+  margin-top: 10px;
+}
+
+
+/* ----------------------------- */
+/* FLOATING HEADER */
+/* ----------------------------- */
+.floating-header {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.btn-floating {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s, transform 0.2s;
+  font-family: Arial, sans-serif;
+}
+
+.floating-btn-link {
+  display: inline-block;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.floating-btn-link:hover {
+  transform: scale(1.05);
+}
+
+.floating-btn-img {
+  width: 120px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+

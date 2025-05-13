@@ -1,0 +1,134 @@
+/* ----------------------------- */
+/* GERAL */
+/* ----------------------------- */
+body {
+  margin: 0;
+  background: url(../IMAGES/BACKGROUND/BACKGROUND.png);
+  background-size: 1920px 950px;
+}
+
+
+/* ----------------------------- */
+/* TOPO / LOGO */
+/* ----------------------------- */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+header img {
+  width: 90%;
+  max-width: 400px;
+  margin-top: 340px;
+}
+
+
+/* ----------------------------- */
+/* BOTÕES FLOTANTES */
+/* ----------------------------- */
+.card-wrapper {
+  width: 90%;
+  max-width: 1300px;
+  margin: 450px auto 0;
+  position: relative;
+}
+
+.floating-header {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  position: absolute;
+  top: -110px;
+  height: 80px;
+  background-color: #004470;
+  color: white;
+  padding: 1px 15px;
+  width: 33%;
+  border-radius: 8px 8px 0 0;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-btn {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  margin-left: 23px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.floating-btn:hover {
+  transform: scale(1.08);
+  filter: brightness(1.2);
+}
+
+
+/* ----------------------------- */
+/* CARD PRINCIPAL */
+/* ----------------------------- */
+.card {
+  display: flex;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  gap: 20px;
+  width: 800%;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+
+/* ----------------------------- */
+/* IMAGEM DO JOGO */
+/* ----------------------------- */
+.image-box {
+  width: 450px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+
+/* ----------------------------- */
+/* CONTEÚDO DO CARD */
+/* ----------------------------- */
+.content-box {
+  flex: 1;
+  padding: 10px 0;
+}
+
+.content-box h2 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: #004470;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+.content-box p {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 23px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  color: #004470;
+  margin-top: 36px;
+  max-width: 800px;
+}
